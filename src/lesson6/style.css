@@ -1,0 +1,28 @@
+.myDiv {
+    background-color: rgb(255, 214, 196);
+    border: 5px rgb(255, 119, 0) solid;
+    font-size: large;
+    color: chocolate;
+}
+
+.d {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.male {
+    color: rgb(4, 128, 200);
+    background-color: lightblue;
+}
+
+.female {
+    color: hotpink;
+    background-color: pink;
+}
+
+.img {
+    width: 30vw;
+    height: auto;
+    border: double black 1px;
+}

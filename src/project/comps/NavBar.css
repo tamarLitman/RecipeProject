@@ -1,0 +1,455 @@
+/* mine from here */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navigation {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  padding: 0.5rem 0rem;
+  color: white;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  margin-top: 0px;
+  border-radius: 3px;
+  background-image: url(../../pics_for_react/watercolor-background-23qgyepvs608tgt8.jpg);
+  background-repeat: repeat;
+  background-attachment: initial;
+}
+
+.link {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  border-radius: 1px;
+  color: rgb(251, 250, 251);
+  width: 23%;
+  list-style-type: none;
+  padding: 5px;
+  overflow: hidden;
+  height: 64px;
+  text-align: center;
+}
+
+.link a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.link:hover {
+
+  background-color: #111;
+  opacity: 40%;
+}
+
+.logo {
+  font-size: xx-large;
+}
+
+form {
+  height: 500px;
+  width: 500px;
+  margin-left: 8%;
+  margin-top: 5%;
+  align-self: center;
+}
+
+input {
+  opacity: 90%;
+  background-color: rgb(251, 253, 254);
+  width: 80%;
+  height: 20%;
+  align-content: center;
+  text-align: center;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  background-color: #847eee;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* background-image: url("../../pics_for_react/12-watercolor-backgrounds.jpeg"); */
+  background-color: rgb(252, 252, 250);
+}
+
+.login-box {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  width: 700px;
+  height: 600px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background-image: url("../../pics_for_react/watercolor-background-23qgyepvs608tgt8.jpg");
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #90e5e9;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #aad8db,
+    0 0 25px #aad8db,
+    0 0 50px #aad8db,
+    0 0 100px #aad8db;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+FormControl {
+  width: 100px;
+}
+
+input [type=submit] {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.cakes {
+  background-color: #de8912;
+  border-width: 10px;
+  /* background-image: url("../../pics_for_react/watercolor-background-23qgyepvs608tgt8.jpg"); */
+}
+
+.soups {
+  background-color: #c8f403;
+  border: 10px;
+  /* background-image: url("../../pics_for_react/watercolor-background-23qgyepvs608tgt8.jpg"); */
+}
+
+.shakes {
+  background-color: #a41a76;
+  border: 10px;
+  background-size: 200px;
+}
+
+.salads {
+  background-color: #30d643;
+  border: 10px;
+  /* background-image: url("../../pics_for_react/watercolor-background-23qgyepvs608tgt8.jpg"); */
+}
+
+.breakfast {
+  background-color: #09d7d4;
+  border: 10px;
+  /* background-image: url("../../pics_for_react/watercolor-background-23qgyepvs608tgt8.jpg"); */
+}
+
+
+.slideshow {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slideshow-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: no-repeat 50% 50%;
+  background-size: cover;
+  animation-name: kenburns;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+
+/* Presentational stuff */
+#bla {
+  font-family: "Aguafina Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  align-content: center;
+}
+
+#present {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 99;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, .75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, .5);
+  padding: 1em 2em;
+  line-height: 1.5;
+
+  small {
+    display: block;
+    text-transform: lowercase;
+    font-size: .7em;
+
+    &:first-child {
+      border-bottom: 1px solid rgba(0, 0, 0, .25);
+      padding-bottom: .5em;
+    }
+
+    &:last-child {
+      border-top: 1px solid rgba(0, 0, 0, .25);
+      padding-top: .5em;
+    }
+  }
+}
+
+.photo-presentation-container {
+  /* z-index: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100vh;
+}
+
+.photo-slideshow {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.user-circle {
+  width: 70px;
+  height: 60px;
+  background: linear-gradient(#8adff2, #3f89e9);
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+}
+
+#container {
+  display: flex;
+}
+
+section {
+  flex: 1;
+  /* Each section takes equal width */
+  padding: 10px;
+}
+
+section.h2,
+h3 {
+  align-self: left;
+  background: linear-gradient(90deg, #3f89e9, #03e9f4);
+  text-align: left;
+  width: 30%;
+  margin-left: 180px;
+}
+
+#add_recipe{
+  background-image: url(../../pics_for_react/watercolor-background-23qgyepvs608tgt8.jpg);
+}
+
+.links{
+  /* z-index: 1; */
+}
+/* #list{
+  background-image: url("../../pics_for_react/watercolor-background-23qgyepvs608tgt8.jpg");
+  width: 70%;
+  height: 1200px;
+  margin: 220px;
+  margin-top: 50px;
+} */

@@ -1,0 +1,46 @@
+.nav {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    justify-content: center;
+    width: 100vw;
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.link {
+    color: beige;
+    font-size: larger;
+    text-decoration: none;
+    margin: 0.8rem 2rem;
+}
+
+.link:hover {
+    color: coral;
+}
+
+/* active בשם class שם שמור - אם קיים  */
+/* ריאקט תדע לזהות אותו ולהחיל אותו על הניתוב שנבחר */
+.active {
+    color: cadetblue;
+}
+
+.homeNav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    width: 5rem;
+    height: 100vh;
+    margin: 0 2rem;
+    float: right;
+}
+
+.hlink{
+    color: blueviolet;
+    font-size: medium;
+    text-decoration: none;
+    margin: 0.8rem 2rem;
+}
